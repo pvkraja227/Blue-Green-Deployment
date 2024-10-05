@@ -20,9 +20,10 @@ terraform init
 terraform plan (17 to add)
 terraform apply --auto-approve
 install kubectl (sudo snap install kubectl --classic)
-aws eks --region ap-south-1 update-kubeconfig --name devopsshack-cluster (connect to cluster)
+aws eks --region ap-south-1 update-kubeconfig --name devopsshack-cluster (inorder to connect to cluster)
 kubectl get nodes - 3
 
+(in Cluster folder)
 kubectl create ns webapps
 vi svc.yml
 kubectl apply -f svc.yml
@@ -30,7 +31,7 @@ vi role.yml
 kubectl apply -f role.yml
 vi rolebind.yml
 kubectl apply -f rolebind.yml
-
+(goto link)
 vi secret.yml
 kubectl apply -f secret.yml -n webapps
 
