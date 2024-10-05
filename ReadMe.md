@@ -19,3 +19,20 @@ git clone https://github.com/pvkraja227/Blue-Green-Deployment.git (goto Cluster 
 terraform init
 terraform plan (17 to add)
 terraform apply --auto-approve
+
+jenkins/nexus.sonarqube - t2.med
+sudo apt update
+
+Jenkins
+
+install jdk17
+install jenkins
+
+
+
+
+
+
+
+
+
