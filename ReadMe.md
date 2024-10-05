@@ -35,6 +35,7 @@ kubectl apply -f rolebind.yml
 vi secret.yml
 kubectl apply -f secret.yml -n webapps
 
+kubectl describe secret mysecretname -n webapps (copy token for authentication): jenkins dashboard/credentials/secret text/paste token
 
 jenkins/nexus/sonarqube - t2.med
 sudo apt update - all 3
@@ -70,8 +71,6 @@ chrome: publicIP:8081 (default: admin/for pwd .. need to enter into container)
 docker exec -it containedID /bin/bash
 cat sonatype-work/nexus3/admin.password (copy pwd and later change) \
 
-
-
 Jenkins Dashboard:
 
 manage jenkins/plugins/available plugins \
@@ -89,7 +88,7 @@ Docker Pipeline
 Pipeline Stage View
 Eclipse Temurin Installer (for java 17) \
 
-
+new item/pipeline/old builds-2/pipeline script
 
 
 
