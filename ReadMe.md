@@ -14,3 +14,5 @@ aws configure (provide access keys and region)
 (install terraform)
 
 sudo snap install terraform --classic
+
+git clone https://github.com/pvkraja227/Blue-Green-Deployment.git
