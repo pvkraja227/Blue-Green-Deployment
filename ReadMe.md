@@ -90,6 +90,32 @@ Eclipse Temurin Installer (for java 17) \
 
 new item/pipeline/old builds-2/pipeline script
 
+(trivy, docker, jdk - directly installed in Jenkins server // but for plugins installed we to need define in tools section: maven, sonarqube)
+manage jenkins/tools/
+maven: name: maven3
+sonarqube: name: sonar-scanner
+
+manage jenkins/credentials/ 
+k8s - already done
+sonar - secret text/
+docker - 
+
+we have to integrate sonarqube server to jenkins
+manage jenkins/system/sonarqube servers/sonarqube installations
+name: sonar/url:http://43.205.120.211:9000/add token
+
+manage jenkins/managed files/add a new config/global maven settings/ID: maven-settings
+<server>
+      <id>maven-releases</id>
+      <username>admin</username>
+      <password>nexus</password>
+    </server>
+    
+    <server>
+      <id>maven-snapshots</id>
+      <username>admin</username>
+      <password>nexus</password>
+    </server>
 
 
 
