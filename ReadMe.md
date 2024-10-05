@@ -123,5 +123,13 @@ copy jenkins url/in sonar dashboard/administration/webhooks/create
 name: Jenkins
 URL: http://3.108.184.60:8080/sonarqube/webhook/ .. create
 
+buildnow
+
+kubectl get all -n webapps
+kubectl logs bankapp-blue-5f8cdb7bd9-mzq5j -n webapps
+take LB link .. 
+
+change: build with parameters from blue to green/switch traffic
+
 
 
