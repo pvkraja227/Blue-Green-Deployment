@@ -108,7 +108,7 @@ roleRef:
 ```
 
 
-### Create Secret / Generate token using service account in the namespace
+### Create Secret / Generate token using service account in the namespace (change kubernetes.io/service-account.name: jenkins)
 
 apiVersion: v1
 kind: Secret
