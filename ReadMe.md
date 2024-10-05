@@ -104,7 +104,7 @@ we have to integrate sonarqube server to jenkins
 manage jenkins/system/sonarqube servers/sonarqube installations
 name: sonar/url:http://43.205.120.211:9000/add token
 
-manage jenkins/managed files/add a new config/global maven settings/ID: maven-settings
+manage jenkins/managed files/add a new config/global maven settings/ID: maven-settings/next
 <server>
       <id>maven-releases</id>
       <username>admin</username>
@@ -117,7 +117,11 @@ manage jenkins/managed files/add a new config/global maven settings/ID: maven-se
       <password>nexus</password>
     </server>
 
+copy releases and snapshots links from nexus dashboard and update in pom.xml
 
+copy jenkins url/in sonar dashboard/administration/webhooks/create
+name: Jenkins
+URL: http://3.108.184.60:8080/sonarqube/webhook/ .. create
 
 
 
