@@ -20,6 +20,20 @@ terraform init
 terraform plan (17 to add)
 terraform apply --auto-approve
 install kubectl (sudo snap install kubectl --classic)
+aws eks --region ap-south-1 update-kubeconfig --name devopsshack-cluster (connect to cluster)
+kubectl get nodes - 3
+
+kubectl create ns webapps
+vi svc.yml
+kubectl apply -f svc.yml
+vi role.yml
+kubectl apply -f role.yml
+vi rolebind.yml
+kubectl apply -f rolebind.yml
+
+vi secret.yml
+kubectl apply -f secret.yml -n webapps
+
 
 jenkins/nexus/sonarqube - t2.med
 sudo apt update - all 3
@@ -31,7 +45,8 @@ sudo cat /var - get pwd and open Jenkins dashboard
 sudo systemctl enable jenkins
 install docker: from chrome: 3 steps
 sudo chmod 666 /var/run/docker.sock (one time permission to all users to use docker or else we need to mention sudo at every instance)
-OR OR sudo usermod -aG docker ubuntu // newgrp docker (adding ubuntu to docker group)
+sudo usermod -aG docker ubuntu (adding ubuntu to docker group)
+sudo usermod -aG docker jenkins (adding jenkins to docker group)
 install trivy
 install kubectl (sudo snap install kubectl --classic) \
 
@@ -53,6 +68,8 @@ docker ps
 chrome: publicIP:8081 (default: admin/for pwd .. need to enter into container)
 docker exec -it containedID /bin/bash
 cat sonatype-work/nexus3/admin.password (copy pwd and later change) \
+
+
 
 Jenkins Dashboard:
 
