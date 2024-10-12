@@ -98,7 +98,7 @@ sonarqube: name: sonar-scanner
 manage jenkins/credentials/ 
 k8s - already done
 sonar - secret text/
-docker - 
+docker - username and password
 
 we have to integrate sonarqube server to jenkins
 manage jenkins/system/sonarqube servers/sonarqube installations
