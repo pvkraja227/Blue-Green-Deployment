@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=tstBG7RC9as
+
 server - t2.med
 
 sudo apt update
